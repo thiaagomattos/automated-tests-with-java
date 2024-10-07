@@ -7,10 +7,10 @@
 	<version>0.0.1-SNAPSHOT</version>
 
 	<properties>
-		<java.version>19</java.version>
+		<java.version>17</java.version>
 		<junit.version>5.9.2</junit.version>
-		<maven.compiler.targer>19</maven.compiler.targer>
-		<maven.compiler.source>19</maven.compiler.source>
+		<maven.compiler.targer>17</maven.compiler.targer>
+		<maven.compiler.source>17</maven.compiler.source>
 
 		<maven.compiler.plugin.version>3.10.1</maven.compiler.plugin.version>
 
@@ -35,6 +35,11 @@
 					<target>${java.version}</target>
 				</configuration>
 				<version>${maven.compiler.plugin.version}</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+    			<artifactId>maven-surefire-plugin</artifactId>
+    			<version>3.0.0-M9</version>
 			</plugin>
 		</plugins>
 	</build>
